@@ -13,9 +13,9 @@ Matrix::Matrix(const std::array<Scaler, n_Rows* m_Columns>& linear_Scalers)
 	{
 		for (size_t j = 0; j < m_Columns; j++)
 		{
-			m_RowVectorArray[i][j] = linear_Scalers[(i * m_Columns) + j];
+			m_RowVectorArray[i][j] = linear_Scalers[GetLinearIndex(i,j)];
 
-			m_ColumnVectorArray[j][i] = linear_Scalers[(i * m_Columns) + j];  // ColumnArray is just a transpose of RowArray.
+			m_ColumnVectorArray[j][i] = linear_Scalers[GetLinearIndex(i,j)];  // ColumnArray is just a transpose of RowArray.
 		}
 	}
 
@@ -33,7 +33,7 @@ Matrix::Matrix(const std::array<Vector, n_Rows>& row_or_column_Vectors, const ch
 			{
 				m_RowVectorArray[i][j] = row_or_column_Vectors[j][i];
 
-				m_LinearArray[(i * m_Columns) + j] = row_or_column_Vectors[j][i];
+				m_LinearArray[GetLinearIndex(i,j)] = row_or_column_Vectors[j][i];
 			}
 		}
 	}
@@ -48,7 +48,7 @@ Matrix::Matrix(const std::array<Vector, n_Rows>& row_or_column_Vectors, const ch
 			{
 				m_ColumnVectorArray[i][j] = row_or_column_Vectors[j][i];
 
-				m_LinearArray[(i * m_Columns) + j] = row_or_column_Vectors[i][j];
+				m_LinearArray[GetLinearIndex(i,j)] = row_or_column_Vectors[i][j];
 			}
 		}
 	}

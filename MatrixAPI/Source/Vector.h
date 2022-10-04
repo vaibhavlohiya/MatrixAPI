@@ -46,5 +46,3 @@ private:
 	std::array<Scaler, m_Size> m_VectorArray;
 
 };
-
-#pragma once

@@ -55,6 +55,8 @@ int main()
 
 	Matrix matrix1({ v1, v2, v3 }, 'R');
 	Matrix matrix2({ v1, v2, v3 }, 'C');
+	Matrix matrixL({ 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+
 	Scaler Ten(10);
 
 	Scaler* m1_linear = matrix1.GetLinearData();
