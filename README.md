@@ -22,3 +22,19 @@ A martix API class for fixed number of dimensions.
 #### b). Method 2 (by directly putting values in it)
 
        Vector v({3.1, 6.7, 5.2});
+
+### 4. Some Vector functions.
+ 
+       v.size();
+       v1.Add(v2);
+       v1.Subtract(v2);
+       v1.DotProduct(v2);
+       v1.CrossProduct(v2);
+
+### 5. Some vector operations.
+
+       v[index];
+       v_add = v1 + v2;
+       v_sub = v1 - v2;
+       v_dot = v1 * v2;
+       
