@@ -13,7 +13,7 @@ A martix API class for fixed number of dimensions.
        
 ### 2. Create a scaler by creating an object of class scaler as given below.
 
-       Scaler x(5.2), y(1.9). z(2.1);
+       Scaler x(5.2), y(1.9), z(2.1);   
        
 ### 3. Some Scaler functions.
        
@@ -33,18 +33,18 @@ A martix API class for fixed number of dimensions.
 
 ### 5. Some Vector functions.
  
-       v.size();
-       v1.Add(v2);
-       v1.Subtract(v2);
-       v1.DotProduct(v2);
-       v1.CrossProduct(v2);
+       v.size();              // returns the size if the vector
+       v1.Add(v2);            // returns a vector which is a sum of v1 and v2
+       v1.Subtract(v2);       // returns a vector which is the difference of v1 and v2.
+       v1.DotProduct(v2);     // returns a scaler which is the result of the dot product of v1 and v2
+       v1.CrossProduct(v2);   // returns a vector which is the cross product of v1 and v2
 
 ### 6. Some vector operations.
 
-       v[index];
-       v_add = v1 + v2;
-       v_sub = v1 - v2;
-       v_dot = v1 * v2;
+       v[index];              // returns an element or a scaler at given index
+       v_add = v1 + v2;       // same as Add
+       v_sub = v1 - v2;       // same as Subtract
+       v_dot = v1 * v2;       // same as DotProduct
 
 ### MATRIX
 
