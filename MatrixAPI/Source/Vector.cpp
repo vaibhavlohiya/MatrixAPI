@@ -38,7 +38,7 @@ Scaler Vector::DotProduct(const Vector& other)
 	Scaler S = {};
 
 	for (size_t i = 0; i < m_Size; i++)
-		S += m_VectorArray[i]*other.m_VectorArray[i];
+		S += m_VectorArray[i] * other.m_VectorArray[i];
 
 	return Scaler(S.Data());
 }

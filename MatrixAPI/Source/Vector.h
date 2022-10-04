@@ -13,7 +13,7 @@ public:
 	// Class Constructors
 
 	Vector() = default;
-	Vector(const std::array<Scaler, m_Size>& Components); 
+	Vector(const std::array<Scaler, m_Size>& Components);
 
 	// Class Methods
 
@@ -44,6 +44,7 @@ private:
 
 	// Class Members
 	std::array<Scaler, m_Size> m_VectorArray;
-	
+
 };
 
+#pragma once

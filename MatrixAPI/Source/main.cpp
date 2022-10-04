@@ -27,11 +27,15 @@ int main()
 
 	std::cout << "x-x-x-x-x-x-x-x-x-x-x- [VECTORS] -x-x-x-x-x-x-x-x-x-x-x-x-x-x-x" << "\n";
 
+	// Method 1
+
 	std::array<Scaler, 3> x_axis = { x1, x2, x3 };
 	std::array<Scaler, 3> y_axis = { y1, y2, y3 };
 	std::array<Scaler, 3> z_axis = { z1, z2, z3 };
 
 	Vector v1(x_axis), v2(y_axis), v3(z_axis);
+
+	// Method 2
 
 	Vector v4({ -2, -4, -6 }), v5({ -1, -3, -5 }), v6({ -7, -9, -11 }); // implicit conversion
 

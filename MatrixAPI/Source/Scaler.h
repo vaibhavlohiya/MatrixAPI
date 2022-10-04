@@ -5,7 +5,7 @@
 // for class vector hence we call it a rank = 0 tensor.
 
 #include <iostream>
- 
+
 class Scaler
 {
 public:
