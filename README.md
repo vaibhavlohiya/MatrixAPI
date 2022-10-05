@@ -34,10 +34,10 @@ A martix API class for fixed number of dimensions.
 ### 5. Some Vector functions.
  
        v.size();              // returns the size if the vector
-       v1.Add(v2);            // returns a vector which is a sum of v1 and v2
-       v1.Subtract(v2);       // returns a vector which is the difference of v1 and v2.
-       v1.DotProduct(v2);     // returns a scaler which is the result of the dot product of v1 and v2
-       v1.CrossProduct(v2);   // returns a vector which is the cross product of v1 and v2
+       v1.add(v2);            // returns a vector which is a sum of v1 and v2
+       v1.subtract(v2);       // returns a vector which is the difference of v1 and v2.
+       v1.dotProduct(v2);     // returns a scaler which is the result of the dot product of v1 and v2
+       v1.crossProduct(v2);   // returns a vector which is the cross product of v1 and v2
 
 ### 6. Some vector operations.
 
