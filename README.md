@@ -38,7 +38,7 @@ A martix API class for fixed number of dimensions.
        
 ### VECTOR
        
-### 4. After that, you can create a vector by 2 methods which are given as
+### 5. After that, you can create a vector by 2 methods which are given as
 
 #### a). Method 1 (by using scalers)
 
@@ -48,7 +48,7 @@ A martix API class for fixed number of dimensions.
 
        Vector v({3.1, 6.7, 5.2});
 
-### 5. Some Vector functions.
+### 6. Some Vector functions.
  
        v.size();              // returns the size if the vector
        v1.add(v2);            // returns a vector which is a sum of v1 and v2
@@ -56,7 +56,7 @@ A martix API class for fixed number of dimensions.
        v1.dotProduct(v2);     // returns a scaler which is the result of the dot product of v1 and v2
        v1.crossProduct(v2);   // returns a vector which is the cross product of v1 and v2
 
-### 6. Some vector operations.
+### 7. Some vector operations.
 
        v[index];              // returns an element or a scaler at given index
        v_add = v1 + v2;       // same as Add
@@ -65,7 +65,7 @@ A martix API class for fixed number of dimensions.
 
 ### MATRIX
 
-### 7. Create a Matrix by creating an object using two methods.
+### 8. Create a Matrix by creating an object using two methods.
 
 #### a). Method 1 (by a linear array of scalers with n_Rows x m_Columns length)
 
@@ -76,7 +76,7 @@ A martix API class for fixed number of dimensions.
        Matrix matrixR({ v1, v2, v3 },  'R') //  For Row Vectors
        Matrix matrixC({ v1, v2, v3 },  'C') //  For Column Vectors
        
-### 8. Some Basic functions. 
+### 9. Some Basic functions. 
 
        matrix.GetRows();     // returns the number of rows
        matrix.GetColumns();  // returns the number of columns
@@ -90,7 +90,7 @@ A martix API class for fixed number of dimensions.
        
        matrix.GetScaler(0,1);      // returns the element or scaler of row index 0 and column index 1.
        
-### 9. Mathematical functions.
+### 10. Mathematical functions.
 
        matrix.Transpose();            // This will transpose the matrix. (NOTE: This will change the matrix into its transpose)
        
@@ -103,7 +103,7 @@ A martix API class for fixed number of dimensions.
        matrix1.prod_Matrix(matrix2);   // returns a matrix which is a product of matrix 1 and matrix 2.
        matrix.prod_Scaler(scaler);     // returns a matrix which is a product of matrix and a scaler.
        
-### 10. Matrix operations.
+### 11. Matrix operations.
 
        matrix[1];  // returns a column vector of index 1 by default.
        
