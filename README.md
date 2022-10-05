@@ -3,10 +3,8 @@ A martix API class for fixed number of dimensions.
 
 # How it works
 
-### 1. Include all the necessary header files such as Scaler.h, Vector.h, Matrix.h . 
+### 1. Include the necessary header file.
 
-       #include "Scaler.h"
-       #include "Vector.h"
        #include "Matrix.h"
        
 ### SCALER       
