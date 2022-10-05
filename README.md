@@ -51,6 +51,7 @@ A martix API class for fixed number of dimensions.
 ### 6. Some Vector functions.
  
        v.size();              // returns the size if the vector
+       v.Data();              // return a pointer to the first element of the vector array.
        v1.add(v2);            // returns a vector which is a sum of v1 and v2
        v1.subtract(v2);       // returns a vector which is the difference of v1 and v2.
        v1.dotProduct(v2);     // returns a scaler which is the result of the dot product of v1 and v2
@@ -82,8 +83,8 @@ A martix API class for fixed number of dimensions.
        matrix.GetColumns();  // returns the number of columns
        matrix.GetLimit();    // returns the number of elements or scalers you can add in this matrix (n_Rows x m_Columns)
        
-       matrix.GetLinearIndex(5));   // returns the index of the element 5 in the linear array
-       matrix.GetLinearData();      // returns a pointer to the first element of the linear array.
+       matrix.GetLinearIndex(5));   // returns the index of the element 5 in the linear  matrixarray
+       matrix.Data();               // returns a pointer to the first element of the linear matrix array.
        
        matrix.GetRowVector(1);     // returns a row vector of the matrix of index 1.
        matrix.GetColumnVector(2);  // returns a column vector of the matrix of index 2.
