@@ -17,7 +17,24 @@ A martix API class for fixed number of dimensions.
        
 ### 3. Some Scaler functions.
        
-       x.Data();  // This will give you the data inside the scaler object, in this case "5.2" .
+       x.Data();             // This will give you the data inside the scaler object, in this case "5.2" .
+       x1.addition(x2);      // addition of two scalers.
+       x1.subtract(x2);      // subtraction of two scalers.
+       x1.multiply(x2);      // multiplication of two scalers.
+       x1.divide(x2);        // division of two scalers.
+  
+### 4. Some Scaler operations.
+
+       x1 + x2;             // same as addition.
+       x1 - x2;             // same as subtraction
+       x1 * x2;             // same as multiply
+       x1 / x2;             // same as division
+       
+       x1 += x2;            // x1 = x1 + x2
+       x1 -= x2;            // x1 = x1 - x2
+       x1 *= x2;            // x1 = x1 * x2
+       x1 /= x2;            // x1 = x1 / x2
+       x1 == x2;            // binary comparison
        
 ### VECTOR
        
