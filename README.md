@@ -48,16 +48,22 @@ A martix API class for fixed number of dimensions.
 
        Vector v({3.1, 6.7, 5.2});
 
-### 6. Some Vector functions.
+### 6. Vector functions.
  
-       v.size();              // returns the size if the vector
+       v.size();              // returns the size if the vector.
        v.Data();              // return a pointer to the first element of the vector array.
-       v1.add(v2);            // returns a vector which is a sum of v1 and v2
+       
+       v1.add(v2);            // returns a vector which is a sum of v1 and v2.
+       v.addScaler(x);        // returns a vector which adds a scaler x into v. 
+       
        v1.subtract(v2);       // returns a vector which is the difference of v1 and v2.
-       v1.dotProduct(v2);     // returns a scaler which is the result of the dot product of v1 and v2
-       v1.crossProduct(v2);   // returns a vector which is the cross product of v1 and v2
+       v.subtractScaler(x);   // returns a vector which subtracts scaler x from v.
+       
+       v1.dotProduct(v2);     // returns a scaler which is the result of the dot product of v1 and v2.
+       v1.crossProduct(v2);   // returns a vector which is the cross product of v1 and v2.
+       v.prodScaler(x);       // returns a vector which multiplies a scaler x into v.
 
-### 7. Some vector operations.
+### 7. Vector operations.
 
        v[index];              // returns an element or a scaler at given index
        v_add = v1 + v2;       // same as Add
@@ -77,7 +83,7 @@ A martix API class for fixed number of dimensions.
        Matrix matrixR({ v1, v2, v3 },  'R') //  For Row Vectors
        Matrix matrixC({ v1, v2, v3 },  'C') //  For Column Vectors
        
-### 9. Some Basic functions. 
+### 9. Basic functions. 
 
        matrix.GetRows();     // returns the number of rows
        matrix.GetColumns();  // returns the number of columns
