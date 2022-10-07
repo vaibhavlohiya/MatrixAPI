@@ -25,9 +25,10 @@ public:
 	const size_t GetRows() const;
 	const size_t GetColumns() const;
 	const size_t GetLimit() const;
-
 	const size_t GetLinearIndex(const Scaler& scaler_value) const;
-	Scaler* GetLinearData();          // This would return a scaler pointer to the first element of the linear array.
+
+	Scaler* Data();          // This would return a scaler pointer to the first element of the linear array.
+	const Scaler* Data() const;
 
 	const Vector GetRowVector(const size_t& vector_index) const;
 	const Vector GetColumnVector(const size_t& vector_index) const;
@@ -55,8 +56,8 @@ public:
 	Matrix operator*(const Matrix& other);  // Multiplication between two Matrices 
 	Matrix operator*(const Scaler& other);	// Multiplication with a Scaler
 
-	Vector& operator[](size_t& index);             // These operators will return column vectors of given index by default.
-	const Vector& operator[](size_t& index) const;
+	Vector& operator[](size_t index);             // These operators will return row vectors of given index by default.
+	const Vector& operator[](size_t index) const;
 
 
 	// Class Friend function

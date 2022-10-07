@@ -23,7 +23,7 @@ Matrix::Matrix(const std::array<Scaler, n_Rows* m_Columns>& linear_Scalers)
 
 Matrix::Matrix(const std::array<Vector, n_Rows>& row_or_column_Vectors, const char& flag)
 {
-	if (flag == 'C')
+	if (flag == 'C' || flag == 'c')
 	{
 		m_ColumnVectorArray = row_or_column_Vectors;
 
@@ -38,7 +38,7 @@ Matrix::Matrix(const std::array<Vector, n_Rows>& row_or_column_Vectors, const ch
 		}
 	}
 
-	else if (flag == 'R')
+	else if (flag == 'R' || flag == 'r')
 	{
 		m_RowVectorArray = row_or_column_Vectors;
 
@@ -78,7 +78,8 @@ const size_t Matrix::GetLinearIndex(const Scaler& scaler_value) const
 	return -1;
 }
 
-Scaler* Matrix::GetLinearData() { return &m_LinearArray[0]; }
+Scaler* Matrix::Data() { return &m_LinearArray[0]; }
+const Scaler* Matrix::Data() const { return &m_LinearArray[0]; }
 
 const Vector Matrix::GetRowVector(const size_t& vector_index) const
 {
@@ -229,8 +230,8 @@ Matrix Matrix::operator-(const Scaler& other) { return sub_Scaler(other); }
 Matrix Matrix::operator*(const Matrix& other) { return prod_Matrix(other); }
 Matrix Matrix::operator*(const Scaler& other) { return prod_Scaler(other); }
 
-Vector& Matrix::operator[](size_t& index) { return m_ColumnVectorArray[index]; }
-const Vector& Matrix::operator[](size_t& index) const { return m_ColumnVectorArray[index]; }
+Vector& Matrix::operator[](size_t index) { return m_RowVectorArray[index]; }
+const Vector& Matrix::operator[](size_t index) const { return m_RowVectorArray[index]; }
 
 std::ostream& operator<<(std::ostream& stream, const Matrix& M_out)
 {
